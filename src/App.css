@@ -35,18 +35,22 @@ nav {
 }
 .nav-logo-container img {
   width: 150px;
-  height: 100px;
+  height: 86px;
 }
 .navbar-links-container a {
   text-decoration: none;
   padding-left: 35px;
   padding-right: 35px;
-  color: rgb(88, 84, 84);
+  color: #8f8c8c;
   font-size: 1rem;
 
   font-weight: 600;
   align-items: center;
 }
+.navbar-links-container a.active {
+  color: #585454;
+}
+
 .primary-button {
   padding: 10px 15px 10px 15px;
   background-color: rgb(87, 87, 255);
@@ -70,12 +74,66 @@ nav {
   cursor: pointer;
 }
 .home-container {
-  border-top: solid 1px #e3dede;
-  background-color: #f1f0eb;
+  border-top: groove 1px #fff9f9;
+  border-bottom: none;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 4px;
 }
 .card {
   border: none !important;
   margin-top: 1rem;
+}
+.second-container {
+  margin-top: 1%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.footer {
+  color: #ffffff !important;
+
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+}
+ul .nav-item .nav-link {
+  color: #ffffff !important;
+}
+.student-form {
+  margin: 2%;
+  padding: 2%;
+  color: #000;
+}
+/* .student-form {
+
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.1)
+  );
+} */
+.form-row,
+.img-row,
+.banner-row {
+  padding: 4%;
+}
+.form-label,
+.termLabels {
+  font-size: small;
+}
+.student-submit {
+  width: 200px !important;
+  margin-left: 1%;
+}
+.subjects-container {
+  margin: 2% 2% 0 2%;
+}
+
+.subject-header {
+  font-weight: 600 !important;
+  font-size: large !important;
+  border-bottom: solid 2px #e3e0e0;
+}
+.terms-check {
+  margin-right: 3% !important;
 }
 /* ---------------------------------------------------------------------------------- */
 
@@ -83,6 +141,7 @@ nav {
   .navbar-links-container a {
     font-size: 1rem;
   }
+
   .primary-button {
     font-size: 1rem;
   }
@@ -90,7 +149,7 @@ nav {
     max-width: 600px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .nav-logo-container {
     max-width: 140px;
   }

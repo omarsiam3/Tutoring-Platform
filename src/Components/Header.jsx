@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Outlet, Link } from "react-router-dom";
 import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
@@ -36,11 +37,14 @@ const Header = () => {
           <img src={logo} alt="" />
         </div>
         <div className="navbar-links-container">
-          <a href="">Home</a>
-          <a href="">Enroll a student</a>
+          <a href={"/"} className="active">
+            Home
+          </a>
+          <a href={"/student"}>Enroll a student</a>
+
+          <a href={"/tutor"}>Become a tutor</a>
           <a href="">Tutorial Services</a>
           <a href="">Testimonies</a>
-          <a href="">Become a tutor</a>
           <a href="">Contact</a>
           <button className="primary-button">Sign in</button>
         </div>

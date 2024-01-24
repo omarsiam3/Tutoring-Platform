@@ -1,21 +1,52 @@
 const Footer = () => {
   return (
     <>
-      <div className="footer bg-dark">
+      <div className="footer ">
         <div className="container ">
           <footer className="py-5">
             <div className="row">
               <div className="col-6 col-md-2 mb-3">
-                <h5>Section</h5>
+                <h5>Links</h5>
                 <ul className="nav flex-column">
                   <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-muted">
+                    <a href={"/"} className="nav-link p-0 text-muted">
                       Home
                     </a>
                   </li>
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-muted">
-                      Features
+                      Enroll
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-muted">
+                      Become a tutor
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-muted">
+                      Testimonies
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-muted">
+                      Services
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="col-6 col-md-2 mb-3">
+                <h5>Links</h5>
+                <ul className="nav flex-column">
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-muted">
+                      Sign in
+                    </a>
+                  </li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-muted">
+                      Contact
                     </a>
                   </li>
                   <li className="nav-item mb-2">
@@ -37,47 +68,16 @@ const Footer = () => {
               </div>
 
               <div className="col-6 col-md-2 mb-3">
-                <h5>Section</h5>
+                <h5>Links</h5>
                 <ul className="nav flex-column">
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-muted">
-                      Home
+                      Log in
                     </a>
                   </li>
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-muted">
-                      Features
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-muted">
-                      Pricing
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-muted">
-                      FAQs
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-muted">
-                      About
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="col-6 col-md-2 mb-3">
-                <h5>Section</h5>
-                <ul className="nav flex-column">
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-muted">
-                      Home
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-muted">
-                      Features
+                      Help
                     </a>
                   </li>
                   <li className="nav-item mb-2">

@@ -13,13 +13,15 @@ const Student = () => {
             <div style={{ width: 400, height: 370 }}></div>
           </div>
           <div className="col-lg-6">
-            <h1 className="display-5 fw-bold lh-1 mb-3">For students.</h1>
+            <h1 className="display-6 fw-bold lh-1 mb-3">
+              Tailored tutoring, Anytime
+            </h1>
             <p className="lead">
-              We connect learners to exceptional tutors online, for free. We
-              offer a vast range of programs that can be tailored to each
-              student the tutors work with.Our goal is to help students not just
-              understand a subject, but understand how to learn and develop
-              their potential in the future.
+              Pave your path to academic success with our exceptional online
+              tutorial services! We offer a unique and personalized learning
+              experience designed to meet the specific needs of each student.
+              Our dedicated team of expert tutors is committed to providing you
+              with the tools and knowledge you need to excel in your studies.
             </p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
               <button
@@ -109,7 +111,7 @@ const Student = () => {
             <div className="col-lg-4 col-sm-12 col-md-6">
               <div data-mdb-input-init className="form-outline">
                 <label className="form-label" htmlFor="form8Example3">
-                  First name
+                  I am a:
                 </label>
                 <select className="form-control" id="form8Example5">
                   <option></option>
@@ -119,7 +121,7 @@ const Student = () => {
             <div className="col-lg-4 col-sm-12 col-md-6">
               <div data-mdb-input-init className="form-outline">
                 <label className="form-label" htmlFor="form8Example4">
-                  Last name
+                  Student type:
                 </label>
                 <select className="form-control" id="form8Example5">
                   <option></option>
@@ -129,7 +131,7 @@ const Student = () => {
             <div className="col-lg-4 col-sm-12 col-md-6">
               <div data-mdb-input-init className="form-outline">
                 <label className="form-label" htmlFor="form8Example5">
-                  Email address
+                  Subject
                 </label>
                 <select className="form-control" id="form8Example5">
                   <option></option>
@@ -159,27 +161,67 @@ const Student = () => {
       </div>
       {/* ------------------------------------------------------------------------------------------------------ */}
       <div className="subjects-container">
-        <h1 className="display-5 fw-bold text-center">Subjects</h1>
         <div className="px-4 py-5 my-5 text-center shadow ">
+          <h1 className="display-5 fw-bold text-center">Subjects</h1>
           <div className="col-lg-12 mx-auto ">
             <div className="row subs">
-              <div className=" col-lg-3 row1">
-                <h4 className="subject-header">English</h4>
-                <ul>
-                  <li></li>
-                </ul>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Elementary Maths</button>
               </div>
-              <div className=" col-lg-3">
-                <h4 className="subject-header">Maths</h4>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Midlevel maths</button>
               </div>
-              <div className=" col-lg-3">
-                <h4 className="subject-header">Business</h4>
-                <ul>
-                  <li></li>
-                </ul>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Algebra</button>
               </div>
-              <div className=" col-lg-3">
-                <h4 className="subject-header">Others</h4>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Algebra II</button>
+              </div>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Geometry</button>
+              </div>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Trigonometry</button>
+              </div>
+            </div>
+            <div className="row subs2">
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Pre-calculus</button>
+              </div>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Calculus</button>
+              </div>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Finite Math</button>
+              </div>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Biology</button>
+              </div>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Chemistry</button>
+              </div>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Earth Science</button>
+              </div>
+            </div>
+            <div className="row subs">
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Physics</button>
+              </div>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">History</button>
+              </div>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Essay Writing</button>
+              </div>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Reading</button>
+              </div>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Spanish</button>
+              </div>
+              <div className=" col-lg-2">
+                <button className="btn btn-secondary">Career help</button>
               </div>
             </div>
           </div>

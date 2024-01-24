@@ -1,6 +1,8 @@
 import Header from "../Components/Header";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import GoogleIcon from "@mui/icons-material/Google";
+import XIcon from "@mui/icons-material/X";
+import GitHubIcon from "@mui/icons-material/GitHub";
 const SignIn = () => {
   return (
     <>
@@ -15,46 +17,16 @@ const SignIn = () => {
                 alt="Sample image"
               />
             </div>
-            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 tutor-signin">
               <form>
-                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                  <p class="lead fw-normal mb-0 me-3">Sign in with</p>
-                  <button
-                    type="button"
-                    class="btn btn-primary btn-floating mx-1"
-                  >
-                    <FacebookOutlinedIcon />
-                  </button>
-
-                  <button
-                    type="button"
-                    class="btn btn-primary btn-floating mx-1"
-                  >
-                    <GoogleIcon />
-                  </button>
-
-                  <button
-                    type="button"
-                    class="btn btn-primary btn-floating mx-1"
-                  >
-                    <i class="fab fa-linkedin-in"></i>
-                  </button>
-                </div>
-
-                <div class="divider d-flex align-items-center my-4">
-                  <p class="text-center fw-bold mx-3 mb-0">Or</p>
-                </div>
-
+                <h2 class="fw-bold mb-5  text-center">Sign in</h2>
                 <div class="form-outline mb-4">
                   <input
                     type="email"
                     id="form3Example3"
                     class="form-control form-control-lg"
-                    placeholder="Enter a valid email address"
+                    placeholder="Email address"
                   />
-                  <label class="form-label" for="form3Example3">
-                    Email address
-                  </label>
                 </div>
 
                 <div class="form-outline mb-3">
@@ -62,11 +34,8 @@ const SignIn = () => {
                     type="password"
                     id="form3Example4"
                     class="form-control form-control-lg"
-                    placeholder="Enter password"
+                    placeholder="Password"
                   />
-                  <label class="form-label" for="form3Example4">
-                    Password
-                  </label>
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center">
@@ -86,15 +55,38 @@ const SignIn = () => {
                   </a>
                 </div>
 
-                <div class="text-center text-lg-start mt-4 pt-2">
-                  <button type="button" class="btn btn-primary btn-lg">
+                <div class="text-center text-lg-start mt-4 pt-2 login-button-div">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg login-button"
+                  >
                     Login
+                  </button>
+                </div>
+                <br />
+                <div class="text-center">
+                  <p>or sign up with:</p>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <FacebookOutlinedIcon color={"primary"} />
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <GoogleIcon color={"secondary"} />
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <XIcon color={"action"} />
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <GitHubIcon color={"action"} />
                   </button>
                 </div>
               </form>
             </div>
           </div>
         </div>
+
         <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
           <div class="text-white mb-3 mb-md-0">
             Copyright © 2020. All rights reserved.

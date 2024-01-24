@@ -5,6 +5,9 @@ import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import Header from "./Header";
 import Footer from "./Footer";
 import Image from "../assets/studentS.jpg";
+import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
+import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
+import PriceCheckIcon from "@mui/icons-material/PriceCheck";
 const Home = () => {
   return (
     <>
@@ -29,24 +32,24 @@ const Home = () => {
                 Master Your Future with Expert Guidance!
               </h2>
               <p className="lead">
-                We connect learners to exceptional tutors online, for free. We
-                offer a vast range of programs that can be tailored to each
-                student the tutors work with.Our goal is to help students not
-                just understand a subject, but understand how to learn and
-                develop their potential in the future.
+                We connect learners to exceptional tutors online. We offer a
+                vast range of programs that can be tailored to each student the
+                tutors work with.Our goal is to help students not just
+                understand a subject, but understand how to learn and develop
+                their potential in the future.
               </p>
               <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                 <button
                   type="button"
                   className="btn btn-primary btn-lg px-4 me-md-2"
                 >
-                  Enroll a student
+                  Enroll
                 </button>
                 <button
                   type="button"
-                  className="btn btn-outline-secondary btn-lg px-4"
+                  className="btn btn-outline-secondary btutor btn-lg px-4"
                 >
-                  Become a tutor
+                  <a href={"/tutor"}>Become a tutor</a>
                 </button>
               </div>
             </div>
@@ -57,14 +60,15 @@ const Home = () => {
       <div className="container col-xxl-8 px-4 py-5 second-container">
         <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div className="col-lg-6">
-            <h1 className="display-5 fw-bold lh-1 mb-3">
-              Responsive left-aligned hero with image
-            </h1>
+            <h1 className="display-5 fw-bold lh-1 mb-3">Online Tutoring</h1>
             <p className="lead">
-              Quickly design and customize responsive mobile-first sites with
-              Bootstrap, the world’s most popular front-end open source toolkit,
-              featuring Sass variables and mixins, responsive grid system,
-              extensive prebuilt components, and powerful JavaScript plugins.
+              Often, students struggle with their work and rely on tutoring, but
+              tuition classes have become very expensive. Especially during
+              COVID, many schools went online and even completely virtual
+              leaving students to learn content on their own. We've created a
+              program that connects students to high school and college tutors
+              around the world. These tutors teach their students subjects like
+              Science, Math, and English.
             </p>
           </div>
           <div className="col-10 col-sm-8 col-lg-6">
@@ -81,51 +85,45 @@ const Home = () => {
       </div>
 
       {/* --------------------------------------------------------------------------------------------- */}
-      <div className="px-4 py-5 my-5 text-center third-hero bg-light">
+      <div className="px-4 py-5 my-5 text-center third-hero">
         <h3 className=" fw-bold">One student. One tutor. Every week</h3>
         <div className="row">
           <div className="col-sm-4">
-            <div className="card">
+            <div className="card third-hero-card">
               <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <InfoIcon />
+                <h5 className="card-title">Flexible Timings</h5>
+                <AccessTimeFilledIcon color={"#fff"} sx={{ fontSize: 40 }} />
                 <p className="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
+                  After student are matched with a tutor they can decide their
+                  own time and date.
                 </p>
-                <a href="#" className="btn btn-primary">
-                  Go somewhere
-                </a>
               </div>
             </div>
           </div>
           <div className="col-sm-4">
-            <div className="card">
+            <div className="card third-hero-card">
               <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <CommentRoundedIcon size={90} />
+                <h5 className="card-title">Fully personalized</h5>
+                <ConnectWithoutContactIcon
+                  color={"#fff"}
+                  sx={{ fontSize: 40 }}
+                />
                 <p className="card-text">
-                  With supporting text below as a natural lead-in to additional
+                  Classes are 1-to-1 so students get comprehensive lesson on
                   content.
                 </p>
-                <a href="#" className="btn btn-primary">
-                  Go somewhere
-                </a>
               </div>
             </div>
           </div>
           <div className="col-sm-4">
-            <div className="card">
+            <div className="card third-hero-card">
               <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <InfoIcon />
+                <h5 className="card-title">Affordable</h5>
+                <PriceCheckIcon color={"#fff"} sx={{ fontSize: 40 }} />
                 <p className="card-text">
                   With supporting text below as a natural lead-in to additional
                   content.
                 </p>
-                <a href="#" className="btn btn-primary">
-                  Go somewhere
-                </a>
               </div>
             </div>
           </div>
@@ -136,20 +134,20 @@ const Home = () => {
         <div className="container col-xxl-8 px-4 py-5">
           <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div className="col-10 col-sm-8 col-lg-6">
+              <h4 className="fw-bold">Handpicked Tutors</h4>
               <p className="lead">
-                Quickly design and customize responsive mobile-first sites with
-                Bootstrap, the world’s most popular front-end open source
-                toolkit, featuring Sass variables and mixins, responsive grid
-                system, extensive prebuilt components, and powerful JavaScript
-                plugins.
+                We're very (very) picky about who we let tutor on our platform -
+                just 1 in 8 who apply make the cut. They're experts in the
+                subjects the teach.
               </p>
 
+              <h4 className="fw-bold">
+                Help from our team, every step of the way
+              </h4>
               <p className="lead">
-                Quickly design and customize responsive mobile-first sites with
-                Bootstrap, the world’s most popular front-end open source
-                toolkit, featuring Sass variables and mixins, responsive grid
-                system, extensive prebuilt components, and powerful JavaScript
-                plugins.
+                Our expert tutor-matching team can pair you or your child with
+                the perfect tutor for their needs - from subject and level,
+                right down to exam board and personality match.
               </p>
             </div>
             <div className="col-lg-6">

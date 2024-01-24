@@ -1,31 +1,33 @@
 import Banner from "../assets/illustration-1.svg";
+import Banner2 from "../assets/banner4.jpg";
 import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import Header from "./Header";
 import Footer from "./Footer";
+import Image from "../assets/studentS.jpg";
 const Home = () => {
   return (
     <>
       <Header />
-      <div className="home-container">
+      <div className="start home-container">
         <div className="b-example-divider"></div>
 
         <div className="container col-xxl-8 px-4 py-5">
           <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div className="col-10 col-sm-8 col-lg-6">
               <img
-                src={Banner}
+                src={Banner2}
                 className="d-block mx-lg-auto img-fluid"
                 alt="Bootstrap Themes"
-                width="700"
+                width="800"
                 height="500"
                 loading="lazy"
               />
             </div>
             <div className="col-lg-6">
-              <h1 className="display-5 fw-bold lh-1 mb-3">
-                Online Tutoring Services
-              </h1>
+              <h2 className="display-6 fw-bold lh-1 mb-3">
+                Master Your Future with Expert Guidance!
+              </h2>
               <p className="lead">
                 We connect learners to exceptional tutors online, for free. We
                 offer a vast range of programs that can be tailored to each
@@ -67,7 +69,7 @@ const Home = () => {
           </div>
           <div className="col-10 col-sm-8 col-lg-6">
             <img
-              src="bootstrap-themes.png"
+              src={Image}
               className="d-block mx-lg-auto img-fluid"
               alt="Bootstrap Themes"
               width="700"

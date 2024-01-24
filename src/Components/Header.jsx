@@ -46,7 +46,9 @@ const Header = () => {
           <a href="">Tutorial Services</a>
           <a href="">Testimonies</a>
           <a href="">Contact</a>
-          <button className="primary-button">Sign in</button>
+          <a className="primary-button" href={"/sign-in"}>
+            Sign in
+          </a>
         </div>
         <div className="navbar-menu-container">
           <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

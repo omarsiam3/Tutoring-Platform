@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Reem Kufi", sans-serif !important;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 img {
   max-width: 100%;
@@ -29,6 +29,13 @@ nav {
   justify-content: center;
   /* margin-left: 10%; */
   min-height: 90px;
+  width: 100%;
+  overflow: hidden;
+
+  background-color: #ffffff;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 4px;
 }
 .navbar-menu-container {
   display: none;
@@ -61,7 +68,7 @@ nav {
   cursor: pointer;
   font-weight: 500;
   transition: 0.2s;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .navbar-cart-icon {
   font-size: 1.15rem;
@@ -77,7 +84,9 @@ nav {
   border-top: groove 1px #fff9f9;
   border-bottom: none;
   background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 4px;
+}
+.start {
+  margin-top: 6.5%;
 }
 .card {
   border: none !important;
@@ -132,8 +141,30 @@ ul .nav-item .nav-link {
   font-size: large !important;
   border-bottom: solid 2px #e3e0e0;
 }
-.terms-check {
-  margin-right: 3% !important;
+
+.img-row {
+  background: url("./assets/tutorr.avif");
+  background-size: cover;
+  border-top-left-radius: 40%;
+}
+.img2-row {
+  background: url("./assets/tutorA.jpg");
+  background-size: cover;
+  border-top-left-radius: 40%;
+}
+.tutor-why {
+  color: #fff9f9;
+  background-color: #103b2b;
+}
+.why-card .card {
+  background: transparent !important;
+}
+.why-card .card .d-flex {
+  background-color: #17825b;
+  border-radius: 5%;
+}
+.sign-form {
+  padding: 3%;
 }
 /* ---------------------------------------------------------------------------------- */
 

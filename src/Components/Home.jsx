@@ -1,4 +1,4 @@
-import Banner from "../assets/illustration-1.svg";
+import Banner from "../assets/stude.webp";
 import Banner2 from "../assets/banner4.jpg";
 import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
@@ -12,21 +12,10 @@ const Home = () => {
   return (
     <>
       <Header />
-      <div className="start home-container">
-        <div className="b-example-divider"></div>
-
+      <div className="start-home home-container">
         <div className="container col-xxl-8 px-4 py-5">
-          <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div className="col-10 col-sm-8 col-lg-6">
-              <img
-                src={Banner2}
-                className="d-block mx-lg-auto img-fluid"
-                alt="Bootstrap Themes"
-                width="800"
-                height="500"
-                loading="lazy"
-              />
-            </div>
+          <div className="row flex-lg-row-reverse  align-items-center g-5 py-5">
+            <div className="col-10 image-sec col-sm-8 col-lg-6"></div>
             <div className="col-lg-6">
               <h2 className="display-6 fw-bold lh-1 mb-3">
                 Master Your Future with Expert Guidance!
@@ -41,7 +30,8 @@ const Home = () => {
               <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                 <button
                   type="button"
-                  className="btn btn-primary btn-lg px-4 me-md-2"
+                  className="btn  btn-lg px-4 me-md-2"
+                  style={{ backgroundColor: "#ffb413", color: "#fff" }}
                 >
                   Enroll
                 </button>
@@ -56,11 +46,97 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <hr />
+      {/* ----------------------------------------------------------------------------------------- */}
+      <div className="container slider col-xxl-8 px-4 py-5  ">
+        <div className="row flex-lg-row align-items-center g-5 py-5">
+          <div className="col-lg-9">
+            <h1 className="display-6 fw-bold lh-1 mb-3">
+              More support means more successful student learning
+            </h1>
+            <p className="lead">
+              We partner with schools and districts to provide impactful online
+              tutoring to students across all grade levels and subjects. Royalty
+              Tutor is easy to use for students, teachers, and admins — as it
+              should be, because we believe tutoring is as essential on the
+              back-to-school list as notebooks and #2 pencils.
+            </p>
+          </div>
+          <div className="col-10 col-sm-6 col-lg-3 counse">
+            <button className="btn btn-primary">Talk to an advisor</button>
+          </div>
+          <hr />
+
+          <div className="row flex-lg-row">
+            <div className="col-10 col-sm-6 col-lg-6">
+              <h4> Personalized learning </h4>
+              <div className="row flex-row-reverse">
+                <div className="col-10 col-sm-6 col-lg-11">
+                  <p>
+                    Learning isn't one-size-fits-all. With Pear Deck Tutor,
+                    students connect with a tutor who’s an exact match for what
+                    they’re looking for — whether they’re stumped by an algebra
+                    equation or looking for an extra challenge.
+                  </p>
+                </div>
+                <div className="col-10 col-sm-6 col-lg-1">
+                  <InfoIcon />
+                </div>
+              </div>
+              <h4> Personalized learning </h4>
+
+              <div className="row flex-row-reverse">
+                <div className="col-10 col-sm-6 col-lg-11">
+                  <p>
+                    Learning isn't one-size-fits-all. With Pear Deck Tutor,
+                    students connect with a tutor who’s an exact match for what
+                    they’re looking for — whether they’re stumped by an algebra
+                    equation or looking for an extra challenge.
+                  </p>
+                </div>
+                <div className="col-10 col-sm-6 col-lg-1">
+                  <InfoIcon />
+                </div>
+              </div>
+            </div>
+            <div className="col-10 col-sm-6 col-lg-6">
+              <h4> Personalized learning </h4>
+              <div className="row flex-row-reverse">
+                <div className="col-10 col-sm-6 col-lg-11">
+                  <p>
+                    Learning isn't one-size-fits-all. With Pear Deck Tutor,
+                    students connect with a tutor who’s an exact match for what
+                    they’re looking for — whether they’re stumped by an algebra
+                    equation or looking for an extra challenge.
+                  </p>
+                </div>
+                <div className="col-10 col-sm-6 col-lg-1">
+                  <InfoIcon />
+                </div>
+              </div>
+              <h4> Personalized learning </h4>
+              <div className="row flex-row-reverse">
+                <div className="col-10 col-sm-6 col-lg-11">
+                  <p>
+                    Learning isn't one-size-fits-all. With Pear Deck Tutor,
+                    students connect with a tutor who’s an exact match for what
+                    they’re looking for — whether they’re stumped by an algebra
+                    equation or looking for an extra challenge.
+                  </p>
+                </div>
+                <div className="col-10 col-sm-6 col-lg-1">
+                  <InfoIcon />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* ------------------------------------------------------------------------------------------ */}
       <div className="container col-xxl-8 px-4 py-5 second-container">
         <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div className="col-lg-6">
-            <h1 className="display-5 fw-bold lh-1 mb-3">Online Tutoring</h1>
+            <h1 className="display-6 fw-bold lh-1 mb-3">Royalty Tutor</h1>
             <p className="lead">
               Often, students struggle with their work and rely on tutoring, but
               tuition classes have become very expensive. Especially during

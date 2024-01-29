@@ -46,7 +46,11 @@ const Header = () => {
           <a href="">Tutorial Services</a>
           <a href="">Testimonies</a>
           <a href="">Contact</a>
-          <a className="primary-button" href={"/sign-in"}>
+          <a
+            className="primary-button"
+            href={"/sign-in"}
+            style={{ backgroundColor: "#ffb413" }}
+          >
             Sign in
           </a>
         </div>

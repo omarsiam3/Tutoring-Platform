@@ -112,7 +112,11 @@ const Footer = () => {
                       className="form-control"
                       placeholder="Email address"
                     />
-                    <button className="btn btn-primary" type="button">
+                    <button
+                      className="btn"
+                      type="button"
+                      style={{ backgroundColor: "#ffb413", color: "#fff" }}
+                    >
                       Subscribe
                     </button>
                   </div>

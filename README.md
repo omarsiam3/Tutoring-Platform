@@ -1,4 +1,5 @@
-![screenshot](https://github.com/privilledge/Tutorial-service/assets/70237671/c035ed51-6457-41f2-a59e-dd49c6147de8)
+![screencapture-localhost-5173-2024-01-25-23_59_38](https://github.com/privilledge/Tutorial-service/assets/70237671/97906a5c-8721-4a7a-ad8b-3ac64aeef5e2)
+
 
 
 # React + Vite

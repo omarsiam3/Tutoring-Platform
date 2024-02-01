@@ -26,7 +26,8 @@ const Student = () => {
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
               <button
                 type="button"
-                className="btn btn-primary btn-lg px-4 me-md-2"
+                className="btn btn-lg px-4 me-md-2"
+                style={{ backgroundColor: "#ffb413", color: "#fff" }}
               >
                 Apply
               </button>
@@ -50,11 +51,7 @@ const Student = () => {
                 <label className="form-label" htmlFor="form8Example1">
                   Firstname
                 </label>
-                <input
-                  type="text"
-                  id="form8Example1"
-                  className="form-control"
-                />
+                <input type="text" className="form-control" required />
               </div>
             </div>
             <div className="col-lg-6 col-sm-12 col-md-12">
@@ -66,6 +63,7 @@ const Student = () => {
                   type="text"
                   id="form8Example2"
                   className="form-control"
+                  required
                 />
               </div>
             </div>
@@ -154,7 +152,7 @@ const Student = () => {
               and conditions.
             </label>
           </div>
-          <button type="button" className="btn btn-dark student-submit">
+          <button type="submit" className="btn btn-dark student-submit">
             Submit
           </button>
         </div>

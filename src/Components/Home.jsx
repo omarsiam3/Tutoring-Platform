@@ -1,7 +1,8 @@
-import Banner from "../assets/stude.webp";
-import Banner2 from "../assets/banner4.jpg";
+import AddTaskIcon from "@mui/icons-material/AddTask";
 import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
+import AddReactionIcon from "@mui/icons-material/AddReaction";
+import AutoModeIcon from "@mui/icons-material/AutoMode";
+import AutoGraphIcon from "@mui/icons-material/AutoGraph";
 import Header from "./Header";
 import Footer from "./Footer";
 import Image from "../assets/studentS.jpg";
@@ -62,81 +63,85 @@ const Home = () => {
               back-to-school list as notebooks and #2 pencils.
             </p>
           </div>
+
           <div className="col-10 col-sm-6 col-lg-3 counse">
             <button className="btn btn-primary">Talk to an advisor</button>
           </div>
           <hr />
+          <div className="row flbex-lg-row"></div>
 
-          <div className="row flex-lg-row">
+          {/* <div className="container">
+            <img src={StudentImg} alt="" className="" />
+          </div> */}
+          <div className="row flbex-lg-row">
             <div className="col-10 col-sm-6 col-lg-6">
               <h4> Personalized learning </h4>
               <div className="row flex-row-reverse">
                 <div className="col-10 col-sm-6 col-lg-11">
                   <p>
-                    Learning isn't one-size-fits-all. With Pear Deck Tutor,
-                    students connect with a tutor who’s an exact match for what
-                    they’re looking for — whether they’re stumped by an algebra
-                    equation or looking for an extra challenge.
+                    Learning isn't one-size-fits-all. With us, students connect
+                    with a tutor who’s an exact match for what they’re looking
+                    for — whether they’re stumped by an algebra equation or
+                    looking for an extra challenge.
                   </p>
                 </div>
-                <div className="col-10 col-sm-6 col-lg-1">
-                  <InfoIcon />
+                <div className="col-10 col-sm-6 col-lg-1 sec-icon">
+                  <AddReactionIcon />
                 </div>
               </div>
-              <h4> Personalized learning </h4>
+              <h4> Put tutors on your teachers’ team </h4>
 
               <div className="row flex-row-reverse">
                 <div className="col-10 col-sm-6 col-lg-11">
                   <p>
-                    Learning isn't one-size-fits-all. With Pear Deck Tutor,
-                    students connect with a tutor who’s an exact match for what
-                    they’re looking for — whether they’re stumped by an algebra
-                    equation or looking for an extra challenge.
+                    Our Tutors complement the heroic work of teachers in the
+                    classroom by providing additional support and differentiated
+                    instruction.
                   </p>
                 </div>
-                <div className="col-10 col-sm-6 col-lg-1">
-                  <InfoIcon />
+                <div className="col-10 col-sm-6 col-lg-1 sec-icon">
+                  <AddTaskIcon />
                 </div>
               </div>
             </div>
             <div className="col-10 col-sm-6 col-lg-6">
-              <h4> Personalized learning </h4>
+              <h4> Empower Students</h4>
               <div className="row flex-row-reverse">
                 <div className="col-10 col-sm-6 col-lg-11">
                   <p>
-                    Learning isn't one-size-fits-all. With Pear Deck Tutor,
-                    students connect with a tutor who’s an exact match for what
-                    they’re looking for — whether they’re stumped by an algebra
-                    equation or looking for an extra challenge.
+                    Dedicated 1:1 tutoring means every student gets undivided
+                    attention and tailored learning support to master concepts
+                    and build confidence.
                   </p>
                 </div>
-                <div className="col-10 col-sm-6 col-lg-1">
-                  <InfoIcon />
+                <div className="col-10 col-sm-6 col-lg-1 sec-icon">
+                  <AutoModeIcon />
                 </div>
               </div>
-              <h4> Personalized learning </h4>
+              <h4> Better Outcomes</h4>
               <div className="row flex-row-reverse">
                 <div className="col-10 col-sm-6 col-lg-11">
                   <p>
-                    Learning isn't one-size-fits-all. With Pear Deck Tutor,
-                    students connect with a tutor who’s an exact match for what
-                    they’re looking for — whether they’re stumped by an algebra
-                    equation or looking for an extra challenge.
+                    We provide high-quality student support to help address
+                    unfinished learning and supplement acceleration strategies.
                   </p>
                 </div>
-                <div className="col-10 col-sm-6 col-lg-1">
-                  <InfoIcon />
+                <div className="col-10 col-sm-6 col-lg-1 sec-icon">
+                  <AutoGraphIcon />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       {/* ------------------------------------------------------------------------------------------ */}
       <div className="container col-xxl-8 px-4 py-5 second-container">
         <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div className="col-lg-6">
-            <h1 className="display-6 fw-bold lh-1 mb-3">Royalty Tutor</h1>
+            <h1 className="display-6 fw-bold lh-1 mb-3">
+              Expert tutors in every subject
+            </h1>
             <p className="lead">
               Often, students struggle with their work and rely on tutoring, but
               tuition classes have become very expensive. Especially during

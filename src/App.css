@@ -156,15 +156,15 @@ ul .nav-item .nav-link {
 }
 
 .img-row {
-  background: url("./assets/tutorr.avif");
+  background: url("./assets/banner4.jpg");
   background-size: cover;
   border-top-left-radius: 40%;
 }
 .img2-row {
-  background: url("./assets/tutorA.jpg");
+  background: url("./assets/design.jpg");
   background-size: cover;
-  border-top-left-radius: 40%;
 }
+
 .tutor-why {
   color: #ffffff;
   background-color: #ffb413;
@@ -222,6 +222,14 @@ ul .nav-item .nav-link {
   width: 570px;
   height: 500px;
   background-size: cover;
+}
+.sec-icon {
+  background-color: #ffb413;
+  height: 40px;
+  border-radius: 100%;
+  justify-content: center;
+  padding-top: 1%;
+  color: #fff;
 }
 
 /* ---------------------------------------------------------------------------------- */

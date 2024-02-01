@@ -5,12 +5,12 @@ const TutorJoin = () => {
   return (
     <>
       <Header />
-      <div className="container col-xxl-8 px-4 py-2 start">
+      <div className="container col-xxl-8 px-4 py-2 start tutor-join">
         <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div className="col-10 col-sm-8 col-lg-4 img2-row">
+          <div className="col-10 col-sm-8 col-lg-6 img2-row">
             <div style={{ width: 300, height: 500 }}></div>
           </div>
-          <div className="col-lg-8">
+          <div className="col-lg-6">
             <h2 className="display-5 fw-bold lh-1 mb-3">
               Every tutor lives for that{" "}
               <u>
@@ -21,13 +21,14 @@ const TutorJoin = () => {
             <p className="lead">
               We believe 1:1 tutoring can change a student's life — and we're
               always looking for tutors who share that belief. Join our tutor
-              community to support the hundreds of thousands of students already
-              using Pear Deck Tutor.
+              community to support the hundreds of thousands of students
+              already.
             </p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
               <button
                 type="button"
-                className="btn btn-primary btn-lg px-4 me-md-2"
+                className="btn btn-lg px-4 me-md-2"
+                style={{ backgroundColor: "#ffb413", color: "#fff" }}
               >
                 Become a tutor
               </button>
@@ -230,11 +231,11 @@ const TutorJoin = () => {
               <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
                 <div>
                   <h3 class="card-title pt-2">
-                    <strong>Earn steady income</strong>
+                    <strong>Build Your Network</strong>
                   </h3>
                   <p>
-                    Connect 1:1 with thousands of students and get paid weekly,
-                    without invoicing or extra paperwork.
+                    Join our private online community and engage with some
+                    pretty incredible people.
                   </p>
                 </div>
               </div>
@@ -243,11 +244,11 @@ const TutorJoin = () => {
               <div class="text-white text-center d-flex align-items-center py-5 px-4">
                 <div>
                   <h3 class="card-title pt-2">
-                    <strong>Earn steady income</strong>
+                    <strong>Improve student outcomes.</strong>
                   </h3>
                   <p>
-                    Connect 1:1 with thousands of students and get paid weekly,
-                    without invoicing or extra paperwork.
+                    When you help underserved kids, you can change the course of
+                    their lives.
                   </p>
                 </div>
               </div>

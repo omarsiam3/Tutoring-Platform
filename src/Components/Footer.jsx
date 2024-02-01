@@ -6,7 +6,7 @@ const Footer = () => {
           <footer className="py-5">
             <div className="row">
               <div className="col-6 col-md-2 mb-3">
-                <h5>Links</h5>
+                <h5>Students</h5>
                 <ul className="nav flex-column">
                   <li className="nav-item mb-2">
                     <a href={"/"} className="nav-link p-0 text-muted">
@@ -20,55 +20,14 @@ const Footer = () => {
                   </li>
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-muted">
-                      Become a tutor
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-muted">
-                      Testimonies
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-muted">
-                      Services
+                      Log in
                     </a>
                   </li>
                 </ul>
               </div>
 
               <div className="col-6 col-md-2 mb-3">
-                <h5>Links</h5>
-                <ul className="nav flex-column">
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-muted">
-                      Sign in
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-muted">
-                      Contact
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-muted">
-                      Pricing
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-muted">
-                      FAQs
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-muted">
-                      About
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="col-6 col-md-2 mb-3">
-                <h5>Links</h5>
+                <h5>Tutors</h5>
                 <ul className="nav flex-column">
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-muted">
@@ -77,22 +36,34 @@ const Footer = () => {
                   </li>
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-muted">
-                      Help
+                      Become a tutor
                     </a>
                   </li>
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-muted">
-                      Pricing
+                      Tutoring hub
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="col-6 col-md-2 mb-3">
+                <h5>Resources</h5>
+                <ul className="nav flex-column">
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-muted">
+                      Help
+                    </a>
+                  </li>
+
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 text-muted">
+                      About us
                     </a>
                   </li>
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 text-muted">
                       FAQs
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a href="#" className="nav-link p-0 text-muted">
-                      About
                     </a>
                   </li>
                 </ul>

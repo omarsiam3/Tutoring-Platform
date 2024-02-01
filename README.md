@@ -1,4 +1,6 @@
-![screenshot](https://github.com/privilledge/Tutorial-service/assets/70237671/c035ed51-6457-41f2-a59e-dd49c6147de8)
+![screencapture-localhost-5173-2024-02-01-11_42_53](https://github.com/privilledge/Online-Tutoring-platform/assets/70237671/e5c4a62f-bafc-4259-b982-913a7370dab3)
+
+
 
 
 # React + Vite

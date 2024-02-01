@@ -1,4 +1,5 @@
-![screencapture-localhost-5173-2024-01-25-23_59_38](https://github.com/privilledge/Tutorial-service/assets/70237671/97906a5c-8721-4a7a-ad8b-3ac64aeef5e2)
+![screencapture-localhost-5173-2024-02-01-11_42_53](https://github.com/privilledge/Online-Tutoring-platform/assets/70237671/e5c4a62f-bafc-4259-b982-913a7370dab3)
+
 
 
 

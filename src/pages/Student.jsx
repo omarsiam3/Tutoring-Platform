@@ -3,6 +3,9 @@ import Header from "../Components/Header";
 import Tuttor from "../assets/tutorr.avif";
 import Banner from "../assets/illustration-1.svg";
 
+const studentSubmit = () => {
+  alert("Hello");
+};
 const Student = () => {
   return (
     <>
@@ -38,7 +41,7 @@ const Student = () => {
       {/* ------------------------------------------------------------------------------------------------------ */}
 
       {/* --------------------------------------------------------------------------------------------- */}
-      <div className="px-4 py-5 my-5 student-form">
+      <div className="px-4 py-5 my-5 student-form" id="apply">
         <h3 className=" fw-bold">One student. One tutor. Every week</h3>
         <div className="row">
           <p className="font-weight-bold">
@@ -112,7 +115,11 @@ const Student = () => {
                   I am a:
                 </label>
                 <select className="form-control" id="form8Example5">
-                  <option></option>
+                  <option value=""></option>
+                  <option>Primary school student</option>
+                  <option>Elementary student</option>
+                  <option>High School student</option>
+                  <option>College Student</option>
                 </select>
               </div>
             </div>
@@ -123,6 +130,10 @@ const Student = () => {
                 </label>
                 <select className="form-control" id="form8Example5">
                   <option></option>
+                  <option>Primary school student</option>
+                  <option>Elementary student</option>
+                  <option>High School student</option>
+                  <option>College Student</option>
                 </select>
               </div>
             </div>
@@ -152,7 +163,11 @@ const Student = () => {
               and conditions.
             </label>
           </div>
-          <button type="submit" className="btn btn-dark student-submit">
+          <button
+            type="submit"
+            className="btn btn-dark student-submit"
+            onClick={studentSubmit}
+          >
             Submit
           </button>
         </div>

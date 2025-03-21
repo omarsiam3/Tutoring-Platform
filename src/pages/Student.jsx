@@ -170,23 +170,6 @@ const Student = () => {
             </Grid>
             <Grid item xs={12} sm={4}>
               <FormControl fullWidth>
-                <InputLabel>Student type</InputLabel>
-                <Select
-                  name="studentType"
-                  value={form.studentType}
-                  label="Student type"
-                  onChange={handleChange}
-                >
-                  <MenuItem value=""><em>None</em></MenuItem>
-                  <MenuItem value="primary">Primary school student</MenuItem>
-                  <MenuItem value="elementary">Elementary student</MenuItem>
-                  <MenuItem value="high">High School student</MenuItem>
-                  <MenuItem value="college">College Student</MenuItem>
-                </Select>
-              </FormControl>
-            </Grid>
-            <Grid item xs={12} sm={4}>
-              <FormControl fullWidth>
                 <InputLabel>Subject</InputLabel>
                 <Select
                   name="subject"

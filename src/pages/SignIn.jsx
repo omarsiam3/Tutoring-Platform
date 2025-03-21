@@ -1,9 +1,22 @@
 import { useState } from "react";
-import Header from "../Components/Header";
+import {
+  Box,
+  Container,
+  Typography,
+  TextField,
+  Button,
+  Alert,
+  Checkbox,
+  FormControlLabel,
+  IconButton,
+  Stack,
+} from "@mui/material";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import GoogleIcon from "@mui/icons-material/Google";
 import XIcon from "@mui/icons-material/X";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -40,120 +53,89 @@ const SignIn = () => {
   return (
     <>
       <Header />
-      <section className="start vh-100">
-        <div className="container-fluid h-custom sign-form">
-          <div className="row d-flex justify-content-center align-items-center h-100">
-            <div className="col-md-9 col-lg-6 col-xl-5">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-                className="img-fluid"
-                alt="Sample"
+      <Container maxWidth="md" sx={{ py: 6 }}>
+        <Box display="flex" flexDirection={{ xs: "column", md: "row" }} gap={6} alignItems="center">
+          <Box flex={1} textAlign="center">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+              alt="Sign In Illustration"
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
+          </Box>
+
+          <Box flex={1} component="form" onSubmit={handleSubmit} sx={{ maxWidth: 400, mx: "auto" }}>
+            <Typography variant="h4" textAlign="center" mb={3}>
+              Sign In
+            </Typography>
+
+            <TextField
+              label="Email"
+              type="email"
+              fullWidth
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              margin="normal"
+              required
+            />
+
+            <TextField
+              label="Password"
+              type="password"
+              fullWidth
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              margin="normal"
+              required
+            />
+
+            {error && (
+              <Alert severity="error" sx={{ mt: 2 }}>
+                {error}
+              </Alert>
+            )}
+
+            <Box display="flex" justifyContent="space-between" alignItems="center" mt={2}>
+              <FormControlLabel
+                control={<Checkbox />}
+                label="Remember me"
               />
-            </div>
-            <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1 tutor-signin">
-              <form onSubmit={handleSubmit}>
-                <h2 className="fw-bold mb-5 text-center">Sign in</h2>
+              <Typography variant="body2" component="a" href="#" color="text.secondary">
+                Forgot password?
+              </Typography>
+            </Box>
 
-                <div className="form-outline mb-4">
-                  <input
-                    type="email"
-                    className="form-control form-control-lg"
-                    placeholder="Email address"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                  />
-                </div>
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              sx={{ mt: 3, backgroundColor: "#ffb413", color: "#fff" }}
+              disabled={loading}
+            >
+              {loading ? "Signing in..." : "Login"}
+            </Button>
 
-                <div className="form-outline mb-3">
-                  <input
-                    type="password"
-                    className="form-control form-control-lg"
-                    placeholder="Password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                  />
-                </div>
+            <Typography variant="body2" align="center" mt={4}>
+              or sign up with:
+            </Typography>
 
-                {error && (
-                  <div className="alert alert-danger" role="alert">
-                    {error}
-                  </div>
-                )}
-
-                <div className="d-flex justify-content-between align-items-center">
-                  <div className="form-check mb-0">
-                    <input
-                      className="form-check-input me-2"
-                      type="checkbox"
-                      id="rememberMe"
-                    />
-                    <label className="form-check-label" htmlFor="rememberMe">
-                      Remember me
-                    </label>
-                  </div>
-                  <a href="#!" className="text-body">
-                    Forgot password?
-                  </a>
-                </div>
-
-                <div className="text-center text-lg-start mt-4 pt-2 login-button-div">
-                  <button
-                    type="submit"
-                    className="btn btn-lg login-button"
-                    style={{ backgroundColor: "#ffb413", color: "#fff" }}
-                    disabled={loading}
-                  >
-                    {loading ? "Signing in..." : "Login"}
-                  </button>
-                </div>
-
-                <br />
-                <div className="text-center">
-                  <p>or sign up with:</p>
-                  <button type="button" className="btn btn-link btn-floating mx-1">
-                    <FacebookOutlinedIcon color="primary" />
-                  </button>
-                  <button type="button" className="btn btn-link btn-floating mx-1">
-                    <GoogleIcon color="secondary" />
-                  </button>
-                  <button type="button" className="btn btn-link btn-floating mx-1">
-                    <XIcon color="action" />
-                  </button>
-                  <button type="button" className="btn btn-link btn-floating mx-1">
-                    <GitHubIcon color="action" />
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5"
-          style={{ backgroundColor: "#ffb413" }}
-        >
-          <div className="text-white mb-3 mb-md-0">
-            Copyright © 2024. All rights reserved.
-          </div>
-
-          <div>
-            <a href="#!" className="text-white me-4">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="#!" className="text-white me-4">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#!" className="text-white me-4">
-              <i className="fab fa-google"></i>
-            </a>
-            <a href="#!" className="text-white">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </div>
-      </section>
+            <Stack direction="row" justifyContent="center" spacing={2} mt={1}>
+              <IconButton>
+                <FacebookOutlinedIcon color="primary" />
+              </IconButton>
+              <IconButton>
+                <GoogleIcon color="error" />
+              </IconButton>
+              <IconButton>
+                <XIcon color="action" />
+              </IconButton>
+              <IconButton>
+                <GitHubIcon color="action" />
+              </IconButton>
+            </Stack>
+          </Box>
+        </Box>
+      </Container>
+      <Footer />
     </>
   );
 };

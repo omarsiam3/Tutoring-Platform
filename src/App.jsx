@@ -1,5 +1,3 @@
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
 import Home from "./Components/Home";
 import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -7,8 +5,6 @@ import Student from "./pages/Student";
 import TutorJoin from "./pages/TutorJoin";
 import "./App.css";
 import SignIn from "./pages/SignIn";
-import Loader from "./Components/Loader";
-import { useEffect, useState } from "react";
 import Testimonies from "./pages/Testimonies";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";

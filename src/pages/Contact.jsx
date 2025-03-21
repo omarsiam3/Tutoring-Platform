@@ -1,6 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
+import { useState } from "react";
+import { Box, Container, Typography, TextField, Button, Alert } from "@mui/material";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import { useState } from "react";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -19,30 +21,53 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <section className="container py-5">
-        <h2 className="text-center mb-4">Contact Us</h2>
+      <Container maxWidth="sm" sx={{ py: 6 }}>
+        <Typography variant="h4" align="center" gutterBottom>
+          Contact Us
+        </Typography>
+
         {submitted ? (
-          <div className="alert alert-success text-center">
+          <Alert severity="success" sx={{ mt: 4, textAlign: "center" }}>
             Thanks for reaching out! We'll get back to you soon.
-          </div>
+          </Alert>
         ) : (
-          <form className="mx-auto" style={{ maxWidth: "500px" }} onSubmit={handleSubmit}>
-            <div className="mb-3">
-              <label htmlFor="name" className="form-label">Your Name</label>
-              <input type="text" name="name" id="name" value={form.name} onChange={handleChange} className="form-control" required />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="email" className="form-label">Email Address</label>
-              <input type="email" name="email" id="email" value={form.email} onChange={handleChange} className="form-control" required />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="message" className="form-label">Message</label>
-              <textarea name="message" id="message" value={form.message} onChange={handleChange} className="form-control" rows="4" required />
-            </div>
-            <button type="submit" className="btn btn-primary w-100">Send Message</button>
-          </form>
+          <Box component="form" onSubmit={handleSubmit} sx={{ mt: 4, display: "flex", flexDirection: "column", gap: 3 }}>
+            <TextField
+              label="Your Name"
+              name="name"
+              variant="outlined"
+              fullWidth
+              required
+              value={form.name}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Email Address"
+              name="email"
+              type="email"
+              variant="outlined"
+              fullWidth
+              required
+              value={form.email}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Message"
+              name="message"
+              multiline
+              rows={4}
+              variant="outlined"
+              fullWidth
+              required
+              value={form.message}
+              onChange={handleChange}
+            />
+            <Button type="submit" variant="contained" sx={{ backgroundColor: "#ffb413" }}>
+              Send Message
+            </Button>
+          </Box>
         )}
-      </section>
+      </Container>
       <Footer />
     </>
   );

@@ -1,10 +1,18 @@
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import {
+  Container,
+  Typography,
+  Grid,
+  Card,
+  CardContent,
+} from "@mui/material";
 
 const services = [
   {
     title: "1-on-1 Tutoring",
-    description: "Personalized sessions tailored to your pace and learning style.",
+    description:
+      "Personalized sessions tailored to your pace and learning style.",
   },
   {
     title: "Test Prep",
@@ -24,21 +32,28 @@ const Services = () => {
   return (
     <>
       <Header />
-      <section className="container py-5">
-        <h2 className="text-center mb-5">Our Services</h2>
-        <div className="row">
+      <Container sx={{ py: 6 }}>
+        <Typography variant="h4" align="center" gutterBottom>
+          Our Services
+        </Typography>
+
+        <Grid container spacing={4} mt={2}>
           {services.map((service, index) => (
-            <div className="col-md-6 col-lg-4 mb-4" key={index}>
-              <div className="card h-100 shadow-sm">
-                <div className="card-body">
-                  <h5 className="card-title">{service.title}</h5>
-                  <p className="card-text">{service.description}</p>
-                </div>
-              </div>
-            </div>
+            <Grid item xs={12} sm={6} md={4} key={index}>
+              <Card sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
+                <CardContent>
+                  <Typography variant="h6" gutterBottom>
+                    {service.title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {service.description}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
           ))}
-        </div>
-      </section>
+        </Grid>
+      </Container>
       <Footer />
     </>
   );

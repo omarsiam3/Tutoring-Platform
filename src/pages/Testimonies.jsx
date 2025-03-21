@@ -1,5 +1,13 @@
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import {
+  Container,
+  Typography,
+  Grid,
+  Card,
+  CardContent,
+  Box,
+} from "@mui/material";
 
 const testimonials = [
   {
@@ -28,21 +36,30 @@ const Testimonies = () => {
   return (
     <>
       <Header />
-      <section className="container py-5">
-        <h2 className="text-center mb-5">What Students Are Saying</h2>
-        <div className="row">
-          {testimonials.map((t, index) => (
-            <div key={index} className="col-md-6 col-lg-4 mb-4">
-              <div className="card h-100 shadow-sm">
-                <div className="card-body">
-                  <p className="card-text">“{t.feedback}”</p>
-                  <h5 className="card-title text-end mt-3">— {t.name}</h5>
-                </div>
-              </div>
-            </div>
+      <Container sx={{ py: 6 }}>
+        <Typography variant="h4" align="center" gutterBottom>
+          What Students Are Saying
+        </Typography>
+
+        <Grid container spacing={4} mt={2}>
+          {testimonials.map((t, i) => (
+            <Grid item xs={12} sm={6} md={4} key={i}>
+              <Card elevation={3} sx={{ height: "100%" }}>
+                <CardContent>
+                  <Typography variant="body1" gutterBottom>
+                    “{t.feedback}”
+                  </Typography>
+                  <Box mt={2}>
+                    <Typography variant="subtitle2" align="right" color="text.secondary">
+                      — {t.name}
+                    </Typography>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
           ))}
-        </div>
-      </section>
+        </Grid>
+      </Container>
       <Footer />
     </>
   );

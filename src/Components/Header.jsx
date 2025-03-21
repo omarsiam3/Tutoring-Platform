@@ -1,87 +1,92 @@
-import React, { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
-import { BsCart2 } from "react-icons/bs";
-import { HiOutlineBars3 } from "react-icons/hi2";
-import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
+import { useState } from "react";
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  IconButton,
+  Typography,
+  Drawer,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Button,
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
-import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
+
+const menuOptions = [
+  { text: "Home", path: "/" },
+  { text: "Enroll a Student", path: "/student" },
+  { text: "Become a Tutor", path: "/tutor" },
+  { text: "Services", path: "/services" },
+  { text: "Testimonies", path: "/testimonies" },
+  { text: "Contact", path: "/contact" },
+  { text: "Sign In", path: "/signin" },
+];
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const menuOptions = [
-    { text: "Home", icon: <HomeIcon /> },
-    { text: "Enroll a student", icon: <HomeIcon /> },
-    { text: "Become a tutor", icon: <HomeIcon /> },
-    { text: "Partner with us", icon: <HomeIcon /> },
-    { text: "About", icon: <HomeIcon /> },
-    { text: "Services", icon: <HomeIcon /> },
-    { text: "Testimonies", icon: <HomeIcon /> },
-    { text: "Contact", icon: <HomeIcon /> },
-  ];
+
   return (
     <>
-      <nav>
-        <div className="nav-logo-container">
-          {/* <h4>Tutorials</h4> */}
-          <img src={logo} alt="" />
-        </div>
-        <div className="navbar-links-container">
-          <a href={"/"} className="active">
-            Home
-          </a>
-          <a href={"/student"}>Enroll a student</a>
+      <AppBar position="static" sx={{ backgroundColor: "#fff", color: "#000" }}>
+        <Toolbar sx={{ justifyContent: "space-between" }}>
+          {/* Logo and Brand Name */}
+          <Link to="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
+            <img src={logo} alt="Logo" style={{ height: 40, marginRight: 10 }} />
+            <Typography variant="h6" component="div" sx={{ fontWeight: 600 }}>
+              Tutor Platform
+            </Typography>
+          </Link>
 
-          <a href={"/tutor"}>Become a tutor</a>
-          <a href="">Tutorial Services</a>
-          <a href="">Testimonies</a>
-          <a href="">Contact</a>
-          <a
-            className="primary-button"
-            href={"/sign-in"}
-            style={{ backgroundColor: "#ffb413" }}
-          >
-            Sign in
-          </a>
-        </div>
-        <div className="navbar-menu-container">
-          <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
-        </div>
-        <Drawer
-          open={openMenu}
-          onClose={() => setOpenMenu(false)}
-          anchor="right"
-        >
-          <Box
-            sx={{ width: 250 }}
-            role="presentation"
-            onClick={() => setOpenMenu(false)}
-            onKeyDown={() => setOpenMenu(false)}
-          >
-            <List>
-              {menuOptions.map((item) => (
-                <ListItem key={item.text} disablePadding>
-                  <ListItemButton>
-                    <ListItemIcon>{item.icon}</ListItemIcon>
-                    <ListItemText primary={item.text} />
-                  </ListItemButton>
-                </ListItem>
-              ))}
-            </List>
-            <Divider />
+          {/* Desktop Menu */}
+          <Box sx={{ display: { xs: "none", md: "flex" }, gap: 2 }}>
+            {menuOptions.map((item) => (
+              <Button
+                key={item.text}
+                component={Link}
+                to={item.path}
+                sx={{ color: "#000", fontWeight: 500 }}
+              >
+                {item.text}
+              </Button>
+            ))}
           </Box>
-        </Drawer>
-      </nav>
+
+          {/* Mobile Menu Button */}
+          <IconButton
+            edge="end"
+            color="inherit"
+            aria-label="menu"
+            onClick={() => setOpenMenu(true)}
+            sx={{ display: { md: "none" } }}
+          >
+            <MenuIcon />
+          </IconButton>
+        </Toolbar>
+      </AppBar>
+
+      {/* Mobile Drawer */}
+      <Drawer anchor="right" open={openMenu} onClose={() => setOpenMenu(false)}>
+        <Box sx={{ width: 250 }} role="presentation" onClick={() => setOpenMenu(false)}>
+          <List>
+            {menuOptions.map((item) => (
+              <ListItem key={item.text} disablePadding>
+                <ListItemButton component={Link} to={item.path}>
+                  <ListItemIcon>
+                    <HomeIcon />
+                  </ListItemIcon>
+                  <ListItemText primary={item.text} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+        </Box>
+      </Drawer>
     </>
   );
 };
